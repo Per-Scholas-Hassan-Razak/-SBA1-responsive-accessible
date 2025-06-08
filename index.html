@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Design Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Accessible Design Co. Logo" class="logo" />
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <h1>Welcome to Accessible Design Co.</h1>
+      <p>We build inclusive, responsive, and accessible digital experiences.</p>
+      <button aria-label="Learn more about our services">Learn More</button>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+      <h2>About Us</h2>
+      <article>
+        <p>We are a mission-driven design agency focused on creating web experiences that are beautiful, usable, and inclusive for everyone.</p>
+      </article>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="grid-container">
+        <article>
+          <img src="images/service1.png" alt="Accessibility audit icon" />
+          <h3>Accessibility Audits</h3>
+          <p>Identify and fix accessibility issues across your digital properties.</p>
+        </article>
+        <article>
+          <img src="images/service2.png" alt="Responsive design icon" />
+          <h3>Responsive Design</h3>
+          <p>Ensure your website looks great on all screen sizes.</p>
+        </article>
+        <article>
+          <img src="images/service3.png" alt="Accessible forms icon" />
+          <h3>Form Optimization</h3>
+          <p>Design forms that are easy to use and screen reader-friendly.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form aria-labelledby="contact-form-title">
+        <h3 id="contact-form-title">Get in Touch</h3>
+
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required aria-describedby="name-desc" />
+        <span id="name-desc" class="desc">Enter your full name</span>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required aria-describedby="email-desc" />
+        <span id="email-desc" class="desc">Enter a valid email address</span>
+
+        <label for="subject">Subject:</label>
+        <input id="subject" name="subject" type="text" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Accessible Design Co.</p>
+    <ul class="social-links">
+      <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+      <li><a href="#" aria-label="Follow us on LinkedIn">LinkedIn</a></li>
+      <li><a href="#" aria-label="Email us">Email</a></li>
+    </ul>
+    <address>
+      Contact: <a href="mailto:info@accessibleco.com">info@accessibleco.com</a>
+    </address>
+  </footer>
+
+</body>
+</html>
